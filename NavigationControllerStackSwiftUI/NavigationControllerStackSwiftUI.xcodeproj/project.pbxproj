@@ -23,6 +23,9 @@
 		9A17794C28AD45D20023E4A0 /* PageTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A17794B28AD45D20023E4A0 /* PageTwoViewController.swift */; };
 		9A17794E28AD45F30023E4A0 /* PageThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A17794D28AD45F30023E4A0 /* PageThreeViewController.swift */; };
 		9A17795028AD46330023E4A0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A17794F28AD46330023E4A0 /* DetailViewController.swift */; };
+		9A17795328AE30690023E4A0 /* PageFourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A17795228AE30690023E4A0 /* PageFourViewController.swift */; };
+		9A17795528AE309A0023E4A0 /* PageFiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A17795428AE309A0023E4A0 /* PageFiveViewController.swift */; };
+		9A17795728AE31600023E4A0 /* PageSixViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A17795628AE31600023E4A0 /* PageSixViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,9 @@
 		9A17794B28AD45D20023E4A0 /* PageTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTwoViewController.swift; sourceTree = "<group>"; };
 		9A17794D28AD45F30023E4A0 /* PageThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageThreeViewController.swift; sourceTree = "<group>"; };
 		9A17794F28AD46330023E4A0 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		9A17795228AE30690023E4A0 /* PageFourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageFourViewController.swift; sourceTree = "<group>"; };
+		9A17795428AE309A0023E4A0 /* PageFiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageFiveViewController.swift; sourceTree = "<group>"; };
+		9A17795628AE31600023E4A0 /* PageSixViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageSixViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +167,9 @@
 				9A17794928AD45800023E4A0 /* PageOneViewController.swift */,
 				9A17794B28AD45D20023E4A0 /* PageTwoViewController.swift */,
 				9A17794D28AD45F30023E4A0 /* PageThreeViewController.swift */,
+				9A17795228AE30690023E4A0 /* PageFourViewController.swift */,
+				9A17795428AE309A0023E4A0 /* PageFiveViewController.swift */,
+				9A17795628AE31600023E4A0 /* PageSixViewController.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -305,12 +314,15 @@
 			files = (
 				9A17791628ACF24B0023E4A0 /* ViewController.swift in Sources */,
 				9A17794628AD44C10023E4A0 /* PageView.swift in Sources */,
+				9A17795728AE31600023E4A0 /* PageSixViewController.swift in Sources */,
 				9A17794A28AD45800023E4A0 /* PageOneViewController.swift in Sources */,
 				9A17794428AD44A60023E4A0 /* PageIndex.swift in Sources */,
+				9A17795328AE30690023E4A0 /* PageFourViewController.swift in Sources */,
 				9A17794E28AD45F30023E4A0 /* PageThreeViewController.swift in Sources */,
 				9A17794C28AD45D20023E4A0 /* PageTwoViewController.swift in Sources */,
 				9A17791228ACF24B0023E4A0 /* AppDelegate.swift in Sources */,
 				9A17795028AD46330023E4A0 /* DetailViewController.swift in Sources */,
+				9A17795528AE309A0023E4A0 /* PageFiveViewController.swift in Sources */,
 				9A17791428ACF24B0023E4A0 /* SceneDelegate.swift in Sources */,
 				9A17794228AD0F4D0023E4A0 /* SegmentPickerPageView.swift in Sources */,
 			);
