@@ -18,7 +18,7 @@ struct PageView: View {
     let config: Configuration
     
     var body: some View {
-        GenericUIViewController(config: config, factory: {
+        GenericUIViewControllerWapper(config: config, factory: {
             switch index {
             case .one:
                 return PageOneViewController()
@@ -38,7 +38,7 @@ struct PageView: View {
     }
 }
 
-struct GenericUIViewController<ViewControllerType: UIViewController>: UIViewControllerRepresentable {
+struct GenericUIViewControllerWapper<ViewControllerType: UIViewController>: UIViewControllerRepresentable {
     let config: Configuration
     let factory: () -> ViewControllerType
     
