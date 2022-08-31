@@ -63,7 +63,11 @@ final class PageOneViewController: UIViewController {
     @objc func buttonTapped(sender : Any) {
         let viewController = DetailViewController()
         viewController.labelString = PageIndex.one.name
-        self.navigationController?.pushViewController(viewController, animated: true)
+        if self.navigationController != nil {
+            self.navigationController?.pushViewController(viewController, animated: true)
+        } else {
+            present(viewController, animated: true)
+        }
     }
 
 }

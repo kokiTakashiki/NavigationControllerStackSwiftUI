@@ -16,7 +16,12 @@ final class PageFiveViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .systemMint
+        if #available(iOS 15.0, *) {
+            self.view.backgroundColor = .systemMint
+        } else {
+            // Fallback on earlier versions
+            self.view.backgroundColor = UIColor(red: 0.459, green: 0.984, blue: 0.298, alpha: 1.0)
+        }
         
         // スクリーンの横縦幅
         let screenWidth:CGFloat = self.view.frame.width
@@ -63,7 +68,11 @@ final class PageFiveViewController: UIViewController {
     @objc func buttonTapped(sender : Any) {
         let viewController = DetailViewController()
         viewController.labelString = PageIndex.five.name
-        self.navigationController?.pushViewController(viewController, animated: true)
+        if self.navigationController != nil {
+            self.navigationController?.pushViewController(viewController, animated: true)
+        } else {
+            present(viewController, animated: true)
+        }
     }
 
 }
