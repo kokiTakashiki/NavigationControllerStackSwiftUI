@@ -1,5 +1,5 @@
 //
-//  PageOneViewController.swift
+//  PageFourViewController.swift
 //  NavigationControllerStackSwiftUI
 //
 //  Created by 武田孝騎 on 2022/08/18.
@@ -7,8 +7,8 @@
 
 import UIKit
 
-final class PageOneViewController: UIViewController {
-    
+final class PageFourViewController: UIViewController {
+
     // 画面のタイトル用ラベル
     private let titleLabel = UILabel()
     // ボタンのインスタンス生成
@@ -16,7 +16,7 @@ final class PageOneViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .orange
+        self.view.backgroundColor = .green
         
         // スクリーンの横縦幅
         let screenWidth:CGFloat = self.view.frame.width
@@ -24,7 +24,7 @@ final class PageOneViewController: UIViewController {
         
         titleLabel.frame = CGRect(x:0, y:0,
                                   width:screenWidth/2, height:50)
-        titleLabel.text = PageIndex.one.name
+        titleLabel.text = PageIndex.four.name
         self.view.addSubview(titleLabel)
         
         // ボタンの位置とサイズを設定
@@ -62,13 +62,13 @@ final class PageOneViewController: UIViewController {
 
     @objc func buttonTapped(sender : Any) {
         let viewController = DetailViewController()
-        viewController.labelString = PageIndex.one.name
+        viewController.labelString = PageIndex.four.name
         if self.navigationController != nil {
             self.navigationController?.pushViewController(viewController, animated: true)
         } else {
             present(viewController, animated: true)
         }
     }
-
 }
+
 

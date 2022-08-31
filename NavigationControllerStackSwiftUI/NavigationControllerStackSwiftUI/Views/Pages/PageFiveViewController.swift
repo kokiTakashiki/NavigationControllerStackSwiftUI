@@ -1,5 +1,5 @@
 //
-//  PageOneViewController.swift
+//  PageFiveViewController.swift
 //  NavigationControllerStackSwiftUI
 //
 //  Created by 武田孝騎 on 2022/08/18.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class PageOneViewController: UIViewController {
+final class PageFiveViewController: UIViewController {
     
     // 画面のタイトル用ラベル
     private let titleLabel = UILabel()
@@ -16,7 +16,12 @@ final class PageOneViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .orange
+        if #available(iOS 15.0, *) {
+            self.view.backgroundColor = .systemMint
+        } else {
+            // Fallback on earlier versions
+            self.view.backgroundColor = UIColor(red: 0.459, green: 0.984, blue: 0.298, alpha: 1.0)
+        }
         
         // スクリーンの横縦幅
         let screenWidth:CGFloat = self.view.frame.width
@@ -24,7 +29,7 @@ final class PageOneViewController: UIViewController {
         
         titleLabel.frame = CGRect(x:0, y:0,
                                   width:screenWidth/2, height:50)
-        titleLabel.text = PageIndex.one.name
+        titleLabel.text = PageIndex.five.name
         self.view.addSubview(titleLabel)
         
         // ボタンの位置とサイズを設定
@@ -62,7 +67,7 @@ final class PageOneViewController: UIViewController {
 
     @objc func buttonTapped(sender : Any) {
         let viewController = DetailViewController()
-        viewController.labelString = PageIndex.one.name
+        viewController.labelString = PageIndex.five.name
         if self.navigationController != nil {
             self.navigationController?.pushViewController(viewController, animated: true)
         } else {
@@ -71,4 +76,5 @@ final class PageOneViewController: UIViewController {
     }
 
 }
+
 
